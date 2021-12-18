@@ -14,11 +14,11 @@ public class StudentConfig {
     CommandLineRunner commandLineRunner(StudentRepository repository) {
         return args -> {
             Student marian = new Student(
-                     "Marian", "mail@email.com", LocalDate.of(1993,9,06), 28
+                     "Marian", "mail@email.com", LocalDate.of(1993,9,06)
             );
 
             Student alex = new Student(
-                     "Marian", "alex@email.com", LocalDate.of(1994,6,06), 27
+                     "Marian", "alex@email.com", LocalDate.of(1994,6,06)
             );
 
             repository.saveAll(List.of(marian, alex));
